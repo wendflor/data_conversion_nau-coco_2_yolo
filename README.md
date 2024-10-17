@@ -3,7 +3,6 @@
 1. [About the Project](#about-the-project)
 2. [Installation](#installation)
 3. [Usage](#usage)
-4. [Requirements](#requirements)
 
 ## About the Project
 This implementation allows converting datasets for **object detection** and **instance segmentation** from the **COCO format** (a widely used format for these tasks) into the **YOLO format**. This is particularly useful for utilizing datasets originally created for COCO-based models (e.g., Mask R-CNN) with YOLO-based models.
