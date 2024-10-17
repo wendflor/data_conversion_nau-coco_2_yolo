@@ -7,9 +7,9 @@ output
 red_truck_cap_dataset_yolo
 red_truck_cap_simple_coco
 truck_cap_dataset
-truck_cap_dataset_blue
+truck_cap_dataset_blue_old
 truck_cap_dataset_merged
-truck_cap_dataset_red
+truck_cap_dataset_red_old
 truck_cap_dataset_yolo
 truck_cap_dataset_yolo1
 truck_cap_simple_coco

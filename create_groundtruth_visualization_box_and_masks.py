@@ -56,7 +56,7 @@ def draw_labels(image, bbox_labels, mask_labels, class_names):
 
         # Add the class label
         label_text = class_names[cls]  # Correctly index into class_names
-        cv2.putText(image, label_text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
+        cv2.putText(image, label_text, (x1, y1 - 10), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (0, 255, 0), 2)
 
     for label in mask_labels:
         cls = label['cls']
@@ -69,11 +69,6 @@ def draw_labels(image, bbox_labels, mask_labels, class_names):
             mask_coords[:, 1] *= h
             mask_coords = mask_coords.astype(np.int32)
             cv2.fillPoly(overlay, [mask_coords], color=(0, 255, 0))  # Green color
-
-            # Add the class label (for mask, place the label in the centroid of the mask)
-            centroid = np.mean(mask_coords, axis=0).astype(int)
-            label_text = class_names[cls]  # Correctly index into class_names
-            cv2.putText(image, label_text, (centroid[0], centroid[1]), cv2.FONT_HERSHEY_SIMPLEX, 0.5, (255, 255, 255), 2)
 
     # Blend the original image with the overlay
     alpha = 0.5  # Transparency factor

@@ -48,10 +48,10 @@ def convert_data(input_json_path, output_folder):
 
 if __name__ == "__main__":
     # Pfade anpassen
-    input_json_path = 'truck_cap_dataset_blue/train.json' # 
-    output_folder = 'blue_truck_cap_simple_coco/'  # dataset output folder
+    input_json_path = 'truck_cab_dataset_red/train.json' # 
+    output_folder = 'red_truck_cab_simple_coco/'  # dataset output folder
     convert_data(input_json_path, output_folder)
-    input_json_path = 'truck_cap_dataset_blue/validation.json'
+    input_json_path = 'truck_cab_dataset_red/validation.json'
     convert_data(input_json_path, output_folder)
-    input_json_path = 'truck_cap_dataset_blue/test.json'
+    input_json_path = 'truck_cab_dataset_red/test.json'
     convert_data(input_json_path, output_folder)

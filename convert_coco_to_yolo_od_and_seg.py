@@ -102,14 +102,14 @@ def create_yaml_file(output_folder, json_path):
 
 if __name__ == "__main__":
     # Paths
-    input_json_path = 'blue_truck_cap_simple_coco/train.json'
-    output_dir = 'blue_truck_cap_dataset_yolo/train'  # Main directory for the output
+    input_json_path = 'red_truck_cab_simple_coco/train.json'
+    output_dir = 'red_truck_cab_dataset_yolo/train'  # Main directory for the output
     convert2yolo(input_json_path, output_dir)
-    input_json_path = 'blue_truck_cap_simple_coco/validation.json'
-    output_dir = 'blue_truck_cap_dataset_yolo/val'  # Main directory for the output
+    input_json_path = 'red_truck_cab_simple_coco/validation.json'
+    output_dir = 'red_truck_cab_dataset_yolo/val'  # Main directory for the output
     convert2yolo(input_json_path, output_dir)
-    input_json_path = 'blue_truck_cap_simple_coco/test.json'
-    output_dir = 'blue_truck_cap_dataset_yolo/test'  # Main directory for the output
+    input_json_path = 'red_truck_cab_simple_coco/test.json'
+    output_dir = 'red_truck_cab_dataset_yolo/test'  # Main directory for the output
     convert2yolo(input_json_path, output_dir)
     output_folder = os.path.dirname(output_dir)
     create_yaml_file(output_folder, input_json_path)

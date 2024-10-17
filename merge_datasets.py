@@ -42,9 +42,9 @@ def merge_datasets(dataset1_path, dataset2_path, merged_dataset_path):
 
 # Example paths
 if __name__ == "__main__":
-    dataset1_path = 'red_truck_cap_dataset_yolo'
-    dataset2_path = 'blue_truck_cap_dataset_yolo'
-    merged_dataset_path = 'truck_cap_dataset_merged'
+    dataset1_path = 'red_truck_cab_dataset_yolo'
+    dataset2_path = 'blue_truck_cab_dataset_yolo'
+    merged_dataset_path = 'truck_cab_dataset_merged_1'
 
     merge_datasets(dataset1_path, dataset2_path, merged_dataset_path)
 

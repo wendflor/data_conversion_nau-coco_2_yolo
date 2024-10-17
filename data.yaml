@@ -1,7 +1,7 @@
-train: truck_cap_dataset_merged\train\images
-val: truck_cap_dataset_merged\val\images
-test: truck_cap_dataset_merged\test\images
+train: truck_cab_dataset_merged/train/images
+val: truck_cab_dataset_merged/val/images
+test: truck_cab_dataset_merged/test/images
 nc: 2
 names:
-- red_truck_cap
-- blue_truck_cap
+- red_truck_cab
+- blue_truck_cab

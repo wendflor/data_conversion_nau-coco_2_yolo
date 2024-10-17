@@ -1,0 +1,7 @@
+train: blue_truck_cab_dataset_yolo\train\images
+val: blue_truck_cab_dataset_yolo\val\images
+test: blue_truck_cab_dataset_yolo\test\images
+nc: 2
+names:
+- distractor
+- blue_truck_cab
